@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "e4ad6027-a671-4580-bfdf-fd7cc5825f75",
+		"name": "RadioVeroAlexaSkill",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Alexa",
+			"item": [
+				{
+					"name": "ResumeAudioIntent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SignatureCertChainUrl",
+								"value": "http://google.ca",
+								"type": "text"
+							},
+							{
+								"key": "Signature",
+								"value": "test",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"AMAZON.ResumeIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "{{BaseUrl}}",
+							"host": [
+								"{{BaseUrl}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ResumeAudioIntent",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "SignatureCertChainUrl",
+										"value": "http://google.ca",
+										"type": "text"
+									},
+									{
+										"key": "Signature",
+										"value": "test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"AMAZON.ResumeIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+								},
+								"url": {
+									"raw": "{{BaseUrl}}",
+									"host": [
+										"{{BaseUrl}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "291"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Mar 2022 23:53:48 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"version\": \"1.0\",\n    \"response\": {\n        \"shouldEndSession\": true,\n        \"directives\": [\n            {\n                \"playBehavior\": \"REPLACE_ALL\",\n                \"audioItem\": {\n                    \"stream\": {\n                        \"url\": \"https://onlyguid.com/radiovero\",\n                        \"token\": \"0436EEF3-7571-489F-A3C2-3F6F062E9DB9\",\n                        \"expectedPreviousToken\": null,\n                        \"offsetInMilliseconds\": 0\n                    }\n                },\n                \"type\": \"AudioPlayer.Play\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "PlayAudioIntent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SignatureCertChainUrl",
+								"value": "http://google.ca",
+								"type": "text"
+							},
+							{
+								"key": "Signature",
+								"value": "test",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"PlayAudioIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "{{BaseUrl}}",
+							"host": [
+								"{{BaseUrl}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PlayAudioIntent",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "SignatureCertChainUrl",
+										"value": "http://google.ca",
+										"type": "text"
+									},
+									{
+										"key": "Signature",
+										"value": "test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"PlayAudioIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+								},
+								"url": {
+									"raw": "{{BaseUrl}}",
+									"host": [
+										"{{BaseUrl}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "291"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Mar 2022 23:54:28 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"version\": \"1.0\",\n    \"response\": {\n        \"shouldEndSession\": true,\n        \"directives\": [\n            {\n                \"playBehavior\": \"REPLACE_ALL\",\n                \"audioItem\": {\n                    \"stream\": {\n                        \"url\": \"https://onlyguid.com/radiovero\",\n                        \"token\": \"0436EEF3-7571-489F-A3C2-3F6F062E9DB9\",\n                        \"expectedPreviousToken\": null,\n                        \"offsetInMilliseconds\": 0\n                    }\n                },\n                \"type\": \"AudioPlayer.Play\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "PauseAudioIntent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SignatureCertChainUrl",
+								"value": "http://google.ca",
+								"type": "text"
+							},
+							{
+								"key": "Signature",
+								"value": "test",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"AMAZON.PauseIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "{{BaseUrl}}",
+							"host": [
+								"{{BaseUrl}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PauseAudioIntent",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "SignatureCertChainUrl",
+										"value": "http://google.ca",
+										"type": "text"
+									},
+									{
+										"key": "Signature",
+										"value": "test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"version\": \"1.0\",\r\n\t\"request\": {\r\n\t\t\"type\": \"IntentRequest\",\r\n\t\t\"requestId\": \"amzn1.echo-api.request.ab2e60aa-80da-4361-9a84-d59d64ba7736\",\r\n\t\t\"locale\": \"fr-CA\",\r\n\t\t\"timestamp\": \"2022-03-26T05:45:37Z\",\r\n\t\t\"intent\": {\r\n\t\t\t\"name\": \"AMAZON.PauseIntent\",\r\n\t\t\t\"confirmationStatus\": \"NONE\"\r\n\t\t}\r\n\t}\r\n}"
+								},
+								"url": {
+									"raw": "{{BaseUrl}}",
+									"host": [
+										"{{BaseUrl}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "97"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Mar 2022 23:54:44 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"version\": \"1.0\",\n    \"response\": {\n        \"shouldEndSession\": true,\n        \"directives\": [\n            {\n                \"type\": \"AudioPlayer.Stop\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseUrl",
+			"value": "http://localhost:7071/api/RadioVero",
+			"type": "string"
+		}
+	]
+}

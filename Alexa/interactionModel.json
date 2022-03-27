@@ -1,0 +1,48 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "radio véro bouchard",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "PlayAudioIntent",
+                    "slots": [],
+                    "samples": [
+                        "démarre",
+                        "démarrer",
+                        "commence",
+                        "commencer",
+                        "part",
+                        "partir",
+                        "jouer",
+                        "joue"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
